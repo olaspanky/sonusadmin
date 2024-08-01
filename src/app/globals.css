@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "general_sans";
+  src: local("general_sans"), 
+  url("../fonts/Satoshi_Complete/Fonts/OTF/Satoshi-Black.otf") format("opentype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "light_sans";
+  src: url("../fonts/Satoshi_Complete/Fonts/OTF/Satoshi-Regular.otf") format("opentype");
+  font-weight: normal;
+}
+body{
+  font-family: "general-sans", "light_sans" ;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
